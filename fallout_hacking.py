@@ -50,7 +50,7 @@ def main(length, word_count):
 
         if matches == length:
             print 'Success.  Terminal is now unlocked.'
-            exit()
+            return
 
         print "{0}/{1} correct".format(matches, length)
 
