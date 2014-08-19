@@ -106,5 +106,6 @@ if __name__ == '__main__':
   
     #parse input
     for line in open(infile, 'r').readlines():
-        main(line.strip())
-        print ''
+        if '|' != line[0]:
+            main(line.strip())
+            print ''
