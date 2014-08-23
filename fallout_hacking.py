@@ -40,6 +40,10 @@ def main(length, word_count):
             print 'Invalid guess: guess cannot contain numbers'
             failed = True
 
+        if guess not in words:
+            print 'Invalid guess: word not valid from list'
+            failed = True
+
         if failed: continue
 
         #check guess against answer
