@@ -30,7 +30,7 @@ def create_encoding():
         t = str(bin(i))[2:]
 
         #remove 001 from being in any of the encodings
-        while '001' in t:
+        while deliminator + '1' in t:
             i += 1
             t = str(bin(i))[2:]
         encoding[c] = t
